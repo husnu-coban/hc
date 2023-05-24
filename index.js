@@ -13,11 +13,9 @@ function zaman(){
     const minute=now.getMinutes();
     const second=now.getSeconds();
 
-    console.log(hour);
-
-    akrep[0].style.transform=`rotate(${(hour/24)*360}deg)`;
-    akrep[1].style.transform=`rotate(${(hour/24)*360}deg)`;
-    akrep2[0].style.transform=`rotate(${(hour/24)*360}deg)`;
+    akrep[0].style.transform=`rotate(${((hour/12)*360)+((minute/720)*360)}deg)`;
+    akrep[1].style.transform=`rotate(${((hour/12)*360)+((minute/720)*360)}deg)`;
+    akrep2[0].style.transform=`rotate(${((hour/12)*360)+((minute/720)*360)}deg)`;
 
     yelkovan[0].style.transform=`rotate(${(minute/60)*360}deg)`;
     yelkovan[1].style.transform=`rotate(${(minute/60)*360}deg)`;
